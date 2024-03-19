@@ -1,0 +1,151 @@
+/* Navbar styles */
+.navbar {
+    background-color: #000; /* Blue background color */
+    padding: 20px 40px; /* Padding */
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  }
+  
+  .navbar-brand {
+    font-size: 24px; /* Brand text size */
+    color: #fff; /* Brand text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-nav-left {
+    list-style: none; /* Remove default list style */
+    display: flex;
+    gap: 20px; /* Gap between items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-item {
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link text color */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .nav-link:hover {
+    color: #03fc39; /* Text color on hover */
+  }
+  
+  /* Search form */
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-control {
+    margin-right: 10px;
+    width: 200px; /* Increase width of the search box */
+    padding: 8px; /* Add padding to the search box */
+    background-color: #fff; /* Black background color */
+    color: #000; /* Text color */
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  /* Hamburger menu icon styles */
+  .menu-icon {
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* Image container styles */
+  #carouselExample {
+    margin-top: 20px; /* Adjust margin to create space between navbar and image */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Make the image responsive */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+    }
+  
+    .navbar-nav-left {
+      display: none; /* Hide nav links by default on smaller screens */
+      flex-direction: column; /* Align nav links vertically */
+      background-color: #000; /* Background color for the menu */
+      position: absolute;
+      top: 70px; /* Adjust as needed */
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      padding: 20px;
+    }
+  
+    .navbar-nav-left.active {
+      display: flex; /* Show nav links when active */
+    }
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align text */
+  }
+  
+  .page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  .description p {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to left */
+    display: inline-block; /* Make paragraphs span full width */
+    width: 100%; /* Ensure paragraphs span full width */
+  }
+  
+  /* Style for links */
+  .description a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .description a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Existing styles remain unchanged */
+
+  .contact-info {
+    font-size: 24px;
+    color: #007bff; /* Blue color */
+    margin-top: 30px;
+    text-align: center; /* Center align text */
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
